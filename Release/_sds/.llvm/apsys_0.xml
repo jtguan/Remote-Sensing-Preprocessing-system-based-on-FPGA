@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="cortex_a53" cf:partition="0" cf:prefix="p_0_" cf:name="top" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_conv2d_1">
+    <cf:port cf:name="cmd_conv2d_1" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="CON_IN2_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="KER2_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="CON_OUT2_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="BIA2_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="CON_IN3_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="KER3_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="CON_OUT3_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="BIA3_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="CON_IN4_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="KER4_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="CON_OUT4_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="BIA4_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="CON_IN5_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="KER5_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="CON_OUT5_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="BIA5_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="re_en" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:block cf:name="swblk_conv2d_1">
+    <cf:port cf:name="cmd_conv2d_1" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="CON_IN2_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="KER2_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="CON_OUT2_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="BIA2_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="CON_IN3_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="KER3_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="CON_OUT3_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="BIA3_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="CON_IN4_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="KER4_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="CON_OUT4_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="BIA4_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="CON_IN5_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="KER5_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="CON_OUT5_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="BIA5_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="re_en" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:comp cf:name="zcu102" xd:componentRef="zcu102" xd:clockId="1"/>
+  <cf:comp cf:name="dm_0" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_1" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_2" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_3" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_4" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_5" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_6" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_7" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_8" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_9" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_10" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_11" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_12" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_13" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_14" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_15" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="conv2d_1_1" xd:componentRef="conv2d_1" xd:clockId="1"/>
+  <cf:instance cf:name="hwinst_conv2d_1_1" cf:blockName="hwblk_conv2d_1" cf:compName="conv2d_1_1">
+    <cf:portMap cf:blockPort="cmd_conv2d_1" cf:compPort="ap_ctrl" xd:register="0x8"/>
+    <cf:portMap cf:blockPort="CON_IN2_V" cf:compPort="CON_IN2_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="KER2_V" cf:compPort="KER2_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="CON_OUT2_V" cf:compPort="CON_OUT2_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="BIA2_V" cf:compPort="BIA2_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="CON_IN3_V" cf:compPort="CON_IN3_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="KER3_V" cf:compPort="KER3_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="CON_OUT3_V" cf:compPort="CON_OUT3_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="BIA3_V" cf:compPort="BIA3_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="CON_IN4_V" cf:compPort="CON_IN4_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="KER4_V" cf:compPort="KER4_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="CON_OUT4_V" cf:compPort="CON_OUT4_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="BIA4_V" cf:compPort="BIA4_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="CON_IN5_V" cf:compPort="CON_IN5_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="KER5_V" cf:compPort="KER5_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="CON_OUT5_V" cf:compPort="CON_OUT5_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="BIA5_V" cf:compPort="BIA5_V" xd:paddedWidth="16"/>
+    <cf:portMap cf:blockPort="re_en" cf:compPort="re_en" xd:paddedWidth="32" xd:register="0xC"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_conv2d_1_1" cf:blockName="swblk_conv2d_1" cf:compName="zcu102">
+    <cf:portMap cf:blockPort="cmd_conv2d_1" cf:compPort="ps_e_M_AXI_HPM0_FPD"/>
+    <cf:portMap cf:blockPort="CON_IN2_V" cf:compPort="ps_e_S_AXI_HP3_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="KER2_V" cf:compPort="ps_e_S_AXI_HP2_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="CON_OUT2_V" cf:compPort="ps_e_S_AXI_HP0_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="BIA2_V" cf:compPort="ps_e_S_AXI_HP1_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="CON_IN3_V" cf:compPort="ps_e_S_AXI_HP0_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="KER3_V" cf:compPort="ps_e_S_AXI_HP3_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="CON_OUT3_V" cf:compPort="ps_e_S_AXI_HP1_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="BIA3_V" cf:compPort="ps_e_S_AXI_HP2_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="CON_IN4_V" cf:compPort="ps_e_S_AXI_HP1_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="KER4_V" cf:compPort="ps_e_S_AXI_HP0_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="CON_OUT4_V" cf:compPort="ps_e_S_AXI_HP2_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="BIA4_V" cf:compPort="ps_e_S_AXI_HP3_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="CON_IN5_V" cf:compPort="ps_e_S_AXI_HP2_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="KER5_V" cf:compPort="ps_e_S_AXI_HP1_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="CON_OUT5_V" cf:compPort="ps_e_S_AXI_HP3_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="BIA5_V" cf:compPort="ps_e_S_AXI_HP0_FPD" cf:sptag="HP"/>
+    <cf:portMap cf:blockPort="re_en" cf:compPort="ps_e_M_AXI_HPM0_FPD"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="cmd_conv2d_1" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="cmd_conv2d_1">
+    <cf:dataMover cf:compName="zcu102" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="CON_IN2_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="CON_IN2_V">
+    <cf:dataMover cf:compName="dm_0" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="KER2_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="KER2_V">
+    <cf:dataMover cf:compName="dm_1" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="hwinst_conv2d_1_1" cf:srcPort="CON_OUT2_V" cf:dstInst="swinst_conv2d_1_1" cf:dstPort="CON_OUT2_V">
+    <cf:dataMover cf:compName="dm_15" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="BIA2_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="BIA2_V">
+    <cf:dataMover cf:compName="dm_2" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="CON_IN3_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="CON_IN3_V">
+    <cf:dataMover cf:compName="dm_3" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="KER3_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="KER3_V">
+    <cf:dataMover cf:compName="dm_4" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="hwinst_conv2d_1_1" cf:srcPort="CON_OUT3_V" cf:dstInst="swinst_conv2d_1_1" cf:dstPort="CON_OUT3_V">
+    <cf:dataMover cf:compName="dm_14" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="BIA3_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="BIA3_V">
+    <cf:dataMover cf:compName="dm_5" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="CON_IN4_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="CON_IN4_V">
+    <cf:dataMover cf:compName="dm_6" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="KER4_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="KER4_V">
+    <cf:dataMover cf:compName="dm_7" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="hwinst_conv2d_1_1" cf:srcPort="CON_OUT4_V" cf:dstInst="swinst_conv2d_1_1" cf:dstPort="CON_OUT4_V">
+    <cf:dataMover cf:compName="dm_13" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="BIA4_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="BIA4_V">
+    <cf:dataMover cf:compName="dm_8" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="CON_IN5_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="CON_IN5_V">
+    <cf:dataMover cf:compName="dm_9" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="KER5_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="KER5_V">
+    <cf:dataMover cf:compName="dm_10" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="hwinst_conv2d_1_1" cf:srcPort="CON_OUT5_V" cf:dstInst="swinst_conv2d_1_1" cf:dstPort="CON_OUT5_V">
+    <cf:dataMover cf:compName="dm_12" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="BIA5_V" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="BIA5_V">
+    <cf:dataMover cf:compName="dm_11" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_conv2d_1_1" cf:srcPort="re_en" cf:dstInst="hwinst_conv2d_1_1" cf:dstPort="re_en">
+    <cf:dataMover cf:compName="zcu102" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+</cf:model>

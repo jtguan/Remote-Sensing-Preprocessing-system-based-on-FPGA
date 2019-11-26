@@ -1,0 +1,106 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="CON_IN2" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="CON_IN4" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="KER2" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="CON_OUT2" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="BIA2" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="CON_IN3" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="KER3" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="CON_OUT3" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="BIA3" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="KER4" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="CON_OUT4" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="BIA4" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="CON_IN5" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="KER5" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="CON_OUT5" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" value="BIA5" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="conv2d_1" label="" functionLabel="">
+            <pragma name="LATENCY">
+                <option name="min" value="1"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

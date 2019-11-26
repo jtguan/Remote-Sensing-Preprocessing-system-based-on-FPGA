@@ -1,0 +1,18 @@
+ADDRESS_MAP:=D:/ljd4/GCRU/Release/_sds/p0/.cf_work/address_map.xml
+
+OUTPUT:=GCRU.elf
+
+.PHONY: relink clean
+
+relink: portinfo.o
+	aarch64-linux-gnu-ar crs libxlnk_stub.a portinfo.o D:/ljd4/GCRU/Release/_sds/swstubs/cf_stub.o
+	aarch64-linux-gnu-g++ -L./    D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o D:/ljd4/GCRU/Release/_sds/swstubs/tsw9.o     -LD:/ljd4/GCRU/Release/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -L C:/Xilinx/SDx/2018.3/target/aarch64-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o GCRU.elf
+	aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx GCRU.elf
+	rm libxlnk_stub.a portinfo.o portinfo.h portinfo.c
+
+portinfo.o: ${ADDRESS_MAP} 
+	C:/Xilinx/SDx/2018.3/bin/cf2sw -i D:/ljd4/GCRU/Release/_sds/.llvm/apsys_0.xml -r D:/ljd4/GCRU/Release/_sds/.cdb/xd_ip_db.xml -a ${ADDRESS_MAP} -pollMode 0 -mc 
+	aarch64-linux-gnu-gcc       -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include -c portinfo.c
+
+clean:
+	rm -f portinfo.o portinfo.h portinfo.c ${OUTPUT} libxlnk_stub.a

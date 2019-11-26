@@ -1,0 +1,311 @@
+<ENTRY>
+{
+    "EntryID": "1",
+    "Type": "CmdStep",
+    "DateTimestamp": "2019-Nov-25 19:30:44.364000",
+    "TimestampMillis": "70244364",
+    "Payload": {
+        "CmdStepID": "3e554433-5127-4dd4-b600-b8ce1dcdf523",
+        "Command": "vpl",
+        "LogFile": "D:\/ljd4\/GCRU\/Release\/_sds\/p0\/p0.steps.log",
+        "CommandLine": "C:\/Xilinx\/SDx\/2018.3\/bin\/unwrapped\/win64.o\/vpl.exe --iprepo D:\/ljd4\/GCRU\/Release\/_sds\/iprepo\/repo --iprepo C:\/Xilinx\/SDx\/2018.3\/data\/ip\/xilinx --platform C:\/Xilinx\/SDx\/2018.3\/platforms\/zcu102\/zcu102.xpfm --temp_dir D:\/ljd4\/GCRU\/Release\/_sds\/p0 --output_dir D:\/ljd4\/GCRU\/Release\/_sds\/p0\/vpl --input_file D:\/ljd4\/GCRU\/Release\/_sds\/p0\/.xsd\/top.bd.tcl --target hw --save_temps --kernels conv2d_1:adapter --webtalk_flag SDSoC --remote_ip_cache D:\/ljd4\/ip_cache --xp \"param:compiler.deleteDefaultReportConfigs=false\" ",
+        "OptionArgs": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "2",
+    "Type": "Status",
+    "DateTimestamp": "2019-Nov-25 19:30:44.364000",
+    "TimestampMillis": "70244364",
+    "Payload": {
+        "CmdStepID": "3e554433-5127-4dd4-b600-b8ce1dcdf523",
+        "Status": "Start"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "3",
+    "Type": "SubCmdStep",
+    "DateTimestamp": "2019-Nov-25 19:30:45.356000",
+    "TimestampMillis": "70245356",
+    "Payload": {
+        "CmdStepID": "89703372-632e-42db-8b7e-10b5c400fe9a",
+        "Command": "vivado",
+        "LogFile": "$LOGDIR\\..\\vivado\\vivado.log",
+        "TransactionLogFile": "",
+        "CommandLine": "C:\/Xilinx\/Vivado\/2018.3\/bin\/vivado -mode batch -notrace -source D:\/ljd4\/GCRU\/Release\/_sds\/p0\/vivado\/ipirun.tcl -messageDb D:\/ljd4\/GCRU\/Release\/_sds\/p0\/vivado\/vivado.pb",
+        "OptionArgs": [
+            "-mode",
+            "batch",
+            "-notrace",
+            "-source",
+            "D:\/ljd4\/GCRU\/Release\/_sds\/p0\/vivado\/ipirun.tcl",
+            "-messageDb",
+            "D:\/ljd4\/GCRU\/Release\/_sds\/p0\/vivado\/vivado.pb"
+        ]
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "4",
+    "Type": "Status",
+    "DateTimestamp": "2019-Nov-25 19:30:45.356000",
+    "TimestampMillis": "70245356",
+    "Payload": {
+        "CmdStepID": "89703372-632e-42db-8b7e-10b5c400fe9a",
+        "Status": "Start"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "5",
+    "Type": "Status",
+    "DateTimestamp": "2019-Nov-25 22:15:04.177000",
+    "TimestampMillis": "80104177",
+    "Payload": {
+        "CmdStepID": "89703372-632e-42db-8b7e-10b5c400fe9a",
+        "Status": "Passed"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "6",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.214000",
+    "TimestampMillis": "80104214",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\synth_1\\zcu102_wrapper_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "7",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.215000",
+    "TimestampMillis": "80104215",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\zcu102_conv2d_1_1_0_synth_1\\zcu102_conv2d_1_1_0_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": "conv2d_1"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "8",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.216000",
+    "TimestampMillis": "80104216",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_drc_opted.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_DRC",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "9",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.217000",
+    "TimestampMillis": "80104217",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_io_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_IO",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "10",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.218000",
+    "TimestampMillis": "80104218",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_utilization_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "11",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.219000",
+    "TimestampMillis": "80104219",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_utilization_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "KERNEL_UTILIZATION_PLACEMENT",
+        "KernelName": "D:\/ljd4\/GCRU\/Release\/_sds\/p0\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "12",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.220000",
+    "TimestampMillis": "80104220",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_control_sets_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_CONTROL_SETS",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "13",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.222000",
+    "TimestampMillis": "80104222",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_drc_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_DRC",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "14",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.223000",
+    "TimestampMillis": "80104223",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_methodology_drc_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_METHODOLOGY",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "15",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.224000",
+    "TimestampMillis": "80104224",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_power_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_POWER",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "16",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.225000",
+    "TimestampMillis": "80104225",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_route_status.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_ROUTE_STATUS",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "17",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.226000",
+    "TimestampMillis": "80104226",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_timing_summary_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "18",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.227000",
+    "TimestampMillis": "80104227",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_incremental_reuse_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_INCREMENTAL_REUSE",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "19",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.228000",
+    "TimestampMillis": "80104228",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_clock_utilization_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_CLOCK_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "20",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.229000",
+    "TimestampMillis": "80104229",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_clock_utilization_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "KERNEL_UTILIZATION_ROUTE",
+        "KernelName": "D:\/ljd4\/GCRU\/Release\/_sds\/p0\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_clock"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "21",
+    "Type": "Report",
+    "DateTimestamp": "2019-Nov-25 22:15:04.230000",
+    "TimestampMillis": "80104230",
+    "Payload": {
+        "File": "$LOGDIR\\..\\vivado\\prj\\prj.runs\\impl_1\\zcu102_wrapper_bus_skew_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_BUS_SKEW",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "22",
+    "Type": "Status",
+    "DateTimestamp": "2019-Nov-25 22:15:04.884000",
+    "TimestampMillis": "80104884",
+    "Payload": {
+        "CmdStepID": "3e554433-5127-4dd4-b600-b8ce1dcdf523",
+        "Status": "Passed"
+    }
+}
+</ENTRY>

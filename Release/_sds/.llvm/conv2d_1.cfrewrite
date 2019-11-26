@@ -1,0 +1,33 @@
+void p_0_conv2d_1_1_async_1(ap_fixed<16, 2> CON_IN2[42240], ap_fixed<16, 2> KER2[36864], ap_fixed<16, 2> CON_OUT2[32768], ap_fixed<16, 2> BIA2[64], ap_fixed<16, 2> CON_IN3[42240], ap_fixed<16, 2> KER3[36864], ap_fixed<16, 2> CON_OUT3[32768], ap_fixed<16, 2> BIA3[64], ap_fixed<16, 2> CON_IN4[42240], ap_fixed<16, 2> KER4[36864], ap_fixed<16, 2> CON_OUT4[32768], ap_fixed<16, 2> BIA4[64], ap_fixed<16, 2> CON_IN5[42240], ap_fixed<16, 2> KER5[36864], ap_fixed<16, 2> CON_OUT5[32768], ap_fixed<16, 2> BIA5[64], int re_en);
+void p_0_conv2d_1_1_async_1(ap_fixed<16, 2> CON_IN2[42240], ap_fixed<16, 2> KER2[36864], ap_fixed<16, 2> CON_OUT2[32768], ap_fixed<16, 2> BIA2[64], ap_fixed<16, 2> CON_IN3[42240], ap_fixed<16, 2> KER3[36864], ap_fixed<16, 2> CON_OUT3[32768], ap_fixed<16, 2> BIA3[64], ap_fixed<16, 2> CON_IN4[42240], ap_fixed<16, 2> KER4[36864], ap_fixed<16, 2> CON_OUT4[32768], ap_fixed<16, 2> BIA4[64], ap_fixed<16, 2> CON_IN5[42240], ap_fixed<16, 2> KER5[36864], ap_fixed<16, 2> CON_OUT5[32768], ap_fixed<16, 2> BIA5[64], int re_en)
+{
+  int start_seq[1];
+  start_seq[0] = 0;
+  cf_request_handle_t p_0_hwinst_conv2d_1_1_cmd;
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.cmd_conv2d_1), start_seq, 1 * sizeof(int), &p_0_hwinst_conv2d_1_1_cmd);
+  cf_wait(p_0_hwinst_conv2d_1_1_cmd);
+
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.CON_IN2_V), CON_IN2, 84480, &p_0_request_0);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.KER2_V), KER2, 73728, &p_0_request_1);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.BIA2_V), BIA2, 128, &p_0_request_3);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.CON_IN3_V), CON_IN3, 84480, &p_0_request_4);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.KER3_V), KER3, 73728, &p_0_request_5);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.BIA3_V), BIA3, 128, &p_0_request_7);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.CON_IN4_V), CON_IN4, 84480, &p_0_request_8);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.KER4_V), KER4, 73728, &p_0_request_9);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.BIA4_V), BIA4, 128, &p_0_request_11);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.CON_IN5_V), CON_IN5, 84480, &p_0_request_12);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.KER5_V), KER5, 73728, &p_0_request_13);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.BIA5_V), BIA5, 128, &p_0_request_15);
+  cf_send_i(&(p_0_hwinst_conv2d_1_1.re_en), &re_en, 4, &p_0_request_16);
+
+  cf_receive_i(&(p_0_hwinst_conv2d_1_1.CON_OUT2_V), CON_OUT2, 65536, &p_0_conv2d_1_1_async_1_num_CON_OUT2_V, &p_0_request_2);
+  cf_receive_i(&(p_0_hwinst_conv2d_1_1.CON_OUT3_V), CON_OUT3, 65536, &p_0_conv2d_1_1_async_1_num_CON_OUT3_V, &p_0_request_6);
+  cf_receive_i(&(p_0_hwinst_conv2d_1_1.CON_OUT4_V), CON_OUT4, 65536, &p_0_conv2d_1_1_async_1_num_CON_OUT4_V, &p_0_request_10);
+  cf_receive_i(&(p_0_hwinst_conv2d_1_1.CON_OUT5_V), CON_OUT5, 65536, &p_0_conv2d_1_1_async_1_num_CON_OUT5_V, &p_0_request_14);
+
+
+  cf_request_handle_t req_array[17] = {p_0_request_0, p_0_request_1, p_0_request_2, p_0_request_3, p_0_request_4, p_0_request_5, p_0_request_6, p_0_request_7, p_0_request_8, p_0_request_9, p_0_request_10, p_0_request_11, p_0_request_12, p_0_request_13, p_0_request_14, p_0_request_15, p_0_request_16};
+  sds_insert_req( 1, req_array, 17);
+}
+

@@ -1,0 +1,2 @@
+creating FPGA bitstream.
+Log file: D:/ljd4/GCRU/Release/_sds/p0/vivado/vivado.log

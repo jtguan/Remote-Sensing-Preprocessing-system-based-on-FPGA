@@ -1,0 +1,25 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:39:10 MST 2018
+# Start time    : Mon Nov 25 19:28:26 +0800 2019
+# Command line  : sds++ -Wall -O3 -I../src -c -fmessage-length=0 -MTsrc/tsw9.o -MMD -MP -MFsrc/tsw9.d -MTsrc/tsw9.o -o src/tsw9.o ../src/tsw9.cpp -sds-hw conv2d_1 hw8.cpp -clkid 1 -sds-end -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf zcu102
+# Log file      : D:/ljd4/GCRU/Release/_sds/reports/sds_tsw9.log
+# Journal file  : D:/ljd4/GCRU/Release/_sds/reports/sds_tsw9.jou
+# Report file   : D:/ljd4/GCRU/Release/_sds/reports/sds_tsw9.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Analyzing source for RTL template usage
+C:/Xilinx/SDx/2018.3/bin/rtl_template_extract  D:/ljd4/GCRU/src/tsw9.cpp  -save-query D:/ljd4/GCRU/Release/_sds/.llvm/src/tsw9.rtlx  --  -c  -I../src  -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__  
+    -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include   -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1 -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/aarch64-linux-gnu -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/backward -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include-fixed -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+# Create data motion intermediate representation
+C:/Xilinx/SDx/2018.3/bin/clang_wrapper  -I../src  -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g       -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include   -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1 -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/aarch64-linux-gnu -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/backward -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include-fixed -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11  -emit-llvm -S D:/ljd4/GCRU/src/tsw9.cpp -o D:/ljd4/GCRU/Release/_sds/.llvm/src/tsw9.s
+# Compiling D:/ljd4/GCRU/src/tsw9.cpp
+aarch64-linux-gnu-g++ -c -I../src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__ -MTD:/ljd4/GCRU/Release/src/tsw9.o -MFD:/ljd4/GCRU/Release/src/tsw9.d -MTD:/ljd4/GCRU/Release/src/tsw9.o       -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include D:/ljd4/GCRU/src/tsw9.cpp -o src/tsw9.o
+aarch64-linux-gnu-objcopy --add-section .xdsdata=D:/ljd4/GCRU/Release/_sds/swstubs/tsw9.o.xml src/tsw9.o
+# sds++ completed at Mon Nov 25 19:29:04 +0800 2019

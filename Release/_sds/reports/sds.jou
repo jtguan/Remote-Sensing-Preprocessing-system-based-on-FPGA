@@ -1,0 +1,97 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:39:10 MST 2018
+# Start time    : Mon Nov 25 19:29:05 +0800 2019
+# Command line  : sds++ --remote_ip_cache D:/ljd4/ip_cache -o GCRU.elf ./src/hw8.o ./src/tsw9.o -dmclkid 1 -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf zcu102
+# Log file      : D:/ljd4/GCRU/Release/_sds/reports/sds.log
+# Journal file  : D:/ljd4/GCRU/Release/_sds/reports/sds.jou
+# Report file   : D:/ljd4/GCRU/Release/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Analyzing object files
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo D:/ljd4/GCRU/Release/src/hw8.o D:/ljd4/GCRU/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdrtlx=alloc --only-section=.xdrtlx D:/ljd4/GCRU/Release/src/hw8.o D:/ljd4/GCRU/Release/_sds/.rtlx/hw8.rtlx
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata D:/ljd4/GCRU/Release/src/hw8.o D:/ljd4/GCRU/Release/_sds/.data/conv2d_1.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdpp=alloc --only-section=.xdpp D:/ljd4/GCRU/Release/src/hw8.o D:/ljd4/GCRU/Release/_sds/.pp/hw8.ii
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdfcnmap=alloc --only-section=.xdfcnmap D:/ljd4/GCRU/Release/src/hw8.o D:/ljd4/GCRU/Release/_sds/.cdb/conv2d_1.conv2d_1.fcnmap.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdhlscore=alloc --only-section=.xdhlscore D:/ljd4/GCRU/Release/src/hw8.o D:/ljd4/GCRU/Release/_sds/iprepo/repo/xilinx_com_hls_conv2d_1_1_0/xilinx_com_hls_conv2d_1_1_0.zip
+C:/Xilinx/SDx/2018.3/bin/unzip.bat -u -o D:/ljd4/GCRU/Release/_sds/iprepo/repo/xilinx_com_hls_conv2d_1_1_0/xilinx_com_hls_conv2d_1_1_0.zip -d D:/ljd4/GCRU/Release/_sds/iprepo/repo/xilinx_com_hls_conv2d_1_1_0
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdif=alloc --only-section=.xdif D:/ljd4/GCRU/Release/src/hw8.o D:/ljd4/GCRU/Release/_sds/.cdb/conv2d_1_if.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo D:/ljd4/GCRU/Release/src/tsw9.o D:/ljd4/GCRU/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata D:/ljd4/GCRU/Release/src/tsw9.o D:/ljd4/GCRU/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata D:/ljd4/GCRU/Release/src/tsw9.o D:/ljd4/GCRU/Release/_sds/.data/tsw9.o.xml
+C:/Xilinx/SDx/2018.3/bin/build_xd_ip_db -ip_search 0  -sds-pf D:/ljd4/GCRU/Release/.Xil/zcu102.hpfm  -ip D:/ljd4/GCRU/Release/_sds/iprepo/repo/xilinx_com_hls_conv2d_1_1_0  -o D:/ljd4/GCRU/Release/_sds/.cdb/xd_ip_db.xml  
+# Generating data motion network
+C:/Xilinx/SDx/2018.3/bin/llvm-link -o D:/ljd4/GCRU/Release/_sds/.llvm/sds_all.o D:/ljd4/GCRU/Release/_sds/.llvm/./src/hw8.s D:/ljd4/GCRU/Release/_sds/.llvm/./src/tsw9.s
+cd D:/ljd4/GCRU/Release/_sds/.llvm
+cd D:/ljd4/GCRU/Release/_sds/.llvm
+C:/Xilinx/SDx/2018.3/bin/XidanePass  --dmclkid 1  --repo D:/ljd4/GCRU/Release/_sds/.cdb/xd_ip_db.xml  --dmdb C:/Xilinx/SDx/2018.3/data/DM.db   -os linux -processor cortex-a53 -partition 0  
+cd D:/ljd4/GCRU/Release
+cd D:/ljd4/GCRU/Release
+# Creating block diagram (BD)
+cd D:/ljd4/GCRU/Release/_sds/p0/.xsd
+C:/Xilinx/SDx/2018.3/bin/sdx_link  -cf-system D:/ljd4/GCRU/Release/_sds/.llvm/apsys_0.xml  -cf-db  D:/ljd4/GCRU/Release/_sds/.cdb/xd_ip_db.xml  -xpfm C:/Xilinx/SDx/2018.3/platforms/zcu102/zcu102.xpfm   -multi-clks -trace-buffer 1024 -os linux -quiet
+cd D:/ljd4/GCRU/Release
+cd _sds/p0/.cf_work
+C:/Xilinx/SDx/2018.3/bin/cf2sw  -i D:/ljd4/GCRU/Release/_sds/.llvm/apsys_0.xml  -r D:/ljd4/GCRU/Release/_sds/.cdb/xd_ip_db.xml  -pollMode 0 -mc
+cd D:/ljd4/GCRU/Release
+# Rewrite caller functions
+cd D:/ljd4/GCRU/Release/_sds/swstubs
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo D:/ljd4/GCRU/Release/src/tsw9.o D:/ljd4/GCRU/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata D:/ljd4/GCRU/Release/src/tsw9.o D:/ljd4/GCRU/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata D:/ljd4/GCRU/Release/src/tsw9.o D:/ljd4/GCRU/Release/_sds/.data/tsw9.o.xml
+C:/Xilinx/SDx/2018.3/bin/caller_rewrite  -rewrite D:/ljd4/GCRU/Release/_sds/.llvm/caller0.cfrewrite  -o D:/ljd4/GCRU/Release/_sds/swstubs/tsw9.cpp  D:/ljd4/GCRU/Release/_sds/swstubs/unix_tsw9.cpp  --  -c  -ID:/ljd4/GCRU/src -ID:/ljd4/GCRU/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include   -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1 -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/aarch64-linux-gnu -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/backward -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include-fixed -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+# Compile caller rewrite file D:/ljd4/GCRU/Release/_sds/swstubs/tsw9.cpp
+aarch64-linux-gnu-g++  -c D:/ljd4/GCRU/Release/_sds/swstubs/tsw9.cpp  -ID:/ljd4/GCRU/src -ID:/ljd4/GCRU/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__        -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include  -o D:/ljd4/GCRU/Release/_sds/swstubs/tsw9.o
+cd D:/ljd4/GCRU/Release
+# Prepare hardware access API functions
+cd D:/ljd4/GCRU/Release
+# Create accelerator stub functions
+cd D:/ljd4/GCRU/Release/_sds/swstubs
+C:/Xilinx/SDx/2018.3/bin/stub_gen  -func "conv2d_1" -stub D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1.cfrewrite  -o D:/ljd4/GCRU/Release/_sds/swstubs/hw8.cpp  D:/ljd4/GCRU/Release/_sds/swstubs/unix_hw8.cpp  --  -c  -ID:/ljd4/GCRU/src -ID:/ljd4/GCRU/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include   -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1 -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/aarch64-linux-gnu -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/backward -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include-fixed -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+cd D:/ljd4/GCRU/Release
+cd D:/ljd4/GCRU/Release/_sds/swstubs
+# Compile hardware access API functions
+aarch64-linux-gnu-gcc         -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include -c  D:/ljd4/GCRU/Release/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++        -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include -c  D:/ljd4/GCRU/Release/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs D:/ljd4/GCRU/Release/_sds/swstubs/libxlnk_stub.a D:/ljd4/GCRU/Release/_sds/swstubs/portinfo.o D:/ljd4/GCRU/Release/_sds/swstubs/cf_stub.o
+cd D:/ljd4/GCRU/Release
+cd D:/ljd4/GCRU/Release/_sds/swstubs
+# Compile accelerator stub functions
+aarch64-linux-gnu-g++ -c hw8.cpp  -ID:/ljd4/GCRU/src -ID:/ljd4/GCRU/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__        -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include -o hw8.o
+cd D:/ljd4/GCRU/Release
+cd D:/ljd4/GCRU/Release/_sds/swstubs
+aarch64-linux-gnu-ar crs D:/ljd4/GCRU/Release/_sds/swstubs/libGCRU.a D:/ljd4/GCRU/Release/_sds/swstubs/portinfo.o D:/ljd4/GCRU/Release/_sds/swstubs/cf_stub.o D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o
+cd D:/ljd4/GCRU/Release
+# Preliminary link application ELF
+aarch64-linux-gnu-g++    D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o D:/ljd4/GCRU/Release/_sds/swstubs/tsw9.o      -LD:/ljd4/GCRU/Release/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -LC:/Xilinx/SDx/2018.3/target/aarch64-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o D:/ljd4/GCRU/Release/_sds/swstubs/GCRU.elf 
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx D:/ljd4/GCRU/Release/_sds/swstubs/GCRU.elf
+cd D:/ljd4/GCRU/Release
+# Enable generation of hardware programming files
+# Enable generation of boot files
+# Calling VPL
+C:/Xilinx/SDx/2018.3/bin/vpl   --iprepo D:/ljd4/GCRU/Release/_sds/iprepo/repo  --iprepo C:/Xilinx/SDx/2018.3/data/ip/xilinx  --platform C:/Xilinx/SDx/2018.3/platforms/zcu102/zcu102.xpfm  --temp_dir D:/ljd4/GCRU/Release/_sds/p0  --output_dir D:/ljd4/GCRU/Release/_sds/p0/vpl  --input_file D:/ljd4/GCRU/Release/_sds/p0/.xsd/top.bd.tcl  --target hw   --save_temps  --kernels conv2d_1:adapter --webtalk_flag SDSoC  --remote_ip_cache D:/ljd4/ip_cache --xp \"param:compiler.deleteDefaultReportConfigs=false\" 
+cd _sds/p0/.cf_work
+C:/Xilinx/SDx/2018.3/bin/cf2sw  -i D:/ljd4/GCRU/Release/_sds/.llvm/apsys_0.xml  -r D:/ljd4/GCRU/Release/_sds/.cdb/xd_ip_db.xml  -a address_map.xml  -pollMode 0 -mc
+cd D:/ljd4/GCRU/Release
+# Software tracing enabled
+cd D:/ljd4/GCRU/Release/_sds/swstubs
+# Compile hardware access API functions
+aarch64-linux-gnu-gcc         -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include -c  D:/ljd4/GCRU/Release/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++        -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include -c  D:/ljd4/GCRU/Release/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs D:/ljd4/GCRU/Release/_sds/swstubs/libxlnk_stub.a D:/ljd4/GCRU/Release/_sds/swstubs/portinfo.o D:/ljd4/GCRU/Release/_sds/swstubs/cf_stub.o
+cd D:/ljd4/GCRU/Release
+cd D:/ljd4/GCRU/Release/_sds/swstubs
+aarch64-linux-gnu-ar crs D:/ljd4/GCRU/Release/_sds/swstubs/libGCRU.a D:/ljd4/GCRU/Release/_sds/swstubs/portinfo.o D:/ljd4/GCRU/Release/_sds/swstubs/cf_stub.o D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o
+cd D:/ljd4/GCRU/Release
+# Link application ELF file
+aarch64-linux-gnu-g++    D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o D:/ljd4/GCRU/Release/_sds/swstubs/tsw9.o      -LD:/ljd4/GCRU/Release/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -LC:/Xilinx/SDx/2018.3/target/aarch64-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o D:/ljd4/GCRU/Release/_sds/swstubs/GCRU.elf 
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx D:/ljd4/GCRU/Release/_sds/swstubs/GCRU.elf
+# All user specified timing constraints are met.
+# sds++ completed at Mon Nov 25 22:15:29 +0800 2019

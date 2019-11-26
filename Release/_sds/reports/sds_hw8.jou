@@ -1,0 +1,50 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:39:10 MST 2018
+# Start time    : Mon Nov 25 16:37:39 +0800 2019
+# Command line  : sds++ -Wall -O3 -I../src -c -fmessage-length=0 -MTsrc/hw8.o -MMD -MP -MFsrc/hw8.d -MTsrc/hw8.o -o src/hw8.o ../src/hw8.cpp -sds-hw conv2d_1 hw8.cpp -clkid 1 -sds-end -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf zcu102
+# Log file      : D:/ljd4/GCRU/Release/_sds/reports/sds_hw8.log
+# Journal file  : D:/ljd4/GCRU/Release/_sds/reports/sds_hw8.jou
+# Report file   : D:/ljd4/GCRU/Release/_sds/reports/sds_hw8.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Analyzing source for RTL template usage
+C:/Xilinx/SDx/2018.3/bin/rtl_template_extract  D:/ljd4/GCRU/src/hw8.cpp  -save-query D:/ljd4/GCRU/Release/_sds/.llvm/src/hw8.rtlx  --  -c  -I../src  -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__  
+    -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include   -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1 -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/aarch64-linux-gnu -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/backward -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include-fixed -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+# Create data motion intermediate representation
+C:/Xilinx/SDx/2018.3/bin/clang_wrapper  -I../src  -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g       -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include   -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1 -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/aarch64-linux-gnu -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/backward -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include-fixed -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11  -emit-llvm -S D:/ljd4/GCRU/src/hw8.cpp -o D:/ljd4/GCRU/Release/_sds/.llvm/src/hw8.s
+# Performing accelerator source linting for conv2d_1
+C:/Xilinx/SDx/2018.3/bin/sdslint -target cortex-a53 -func "conv2d_1" D:/ljd4/GCRU/src/hw8.cpp -- -c -I../src -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__ -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include   -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1 -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/aarch64-linux-gnu -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/backward -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include-fixed -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+aarch64-linux-gnu-g++ -c D:/ljd4/GCRU/Release/_sds/swstubs/hw8.cpp -o D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o
+aarch64-linux-gnu-objcopy --add-section .xdinfo=D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o.xml D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o
+# Performing pragma generation
+C:/Xilinx/SDx/2018.3/bin/clang_wrapper -E -ID:/ljd4/GCRU/src -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__ -m64 -D HLS_NO_XIL_FPO_LIB -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include -ID:/ljd4/GCRU/src -D __SDSVHLS__ -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include   -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1 -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/aarch64-linux-gnu -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/backward -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include-fixed -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11 D:/ljd4/GCRU/src/hw8.cpp -o D:/ljd4/GCRU/Release/_sds/vhls/hw8_pp.cpp
+C:/Xilinx/SDx/2018.3/bin/pragma_gen  -func "conv2d_1"   -tcl D:/ljd4/GCRU/Release/_sds/vhls/conv2d_1.tcl   D:/ljd4/GCRU/Release/_sds/vhls/hw8_pp.cpp -multi_aximm   --  -c  -D __SDSVHLS__ -ID:/ljd4/GCRU/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__ -m64      -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include -ID:/ljd4/GCRU/src  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include   -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1 -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/aarch64-linux-gnu -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/backward -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include-fixed -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+# Moving function conv2d_1 to Programmable Logic
+cd D:/ljd4/GCRU/Release/_sds/vhls
+C:/Xilinx/Vivado/2018.3/bin/vivado_hls D:/ljd4/GCRU/Release/_sds/vhls/conv2d_1_run.tcl -l conv2d_1_vivado_hls.log
+cd D:/ljd4/GCRU/Release
+cd D:/ljd4/GCRU/Release/_sds/vhls/conv2d_1/solution/impl/ip
+cd D:/ljd4/GCRU/Release/_sds/vhls
+C:/Xilinx/SDK/2018.3/gnuwin/bin/sed.exe -i -e {s/xilinx\.com\/xidane/xilinx\.com\/xd/g} D:/ljd4/GCRU/Release/_sds/vhls/conv2d_1/solution/impl/ip/auxiliary.xml
+cd D:/ljd4/GCRU/Release
+cd D:/ljd4/GCRU/Release/_sds/.llvm
+C:/Xilinx/SDx/2018.3/bin/xsltproc  --output D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1.hlsmap1.xml  --stringparam P_CLKID 1  --stringparam P_HLS_TYPE hls   C:/Xilinx/SDx/2018.3/scripts/xsd/xdHlsmapRenameAttr.xsl  D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1_auxiliary.xml
+C:/Xilinx/SDx/2018.3/bin/xsltproc  --output D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1.hlsmap.xml  C:/Xilinx/SDx/2018.3/scripts/xsd/xdHlsmapAdapter.xsl  D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1.hlsmap1.xml
+C:/Xilinx/SDx/2018.3/bin/xsltproc    --output D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1.fcnmap.xml  C:/Xilinx/SDx/2018.3/scripts/xsd/xdHlsmapAxi4.xsl  D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1.hlsmap.xml
+C:/Xilinx/SDx/2018.3/bin/xsltproc  --output D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1_if.xml  --stringparam P_ADAPTER_COMPREF adapter_v3_0  C:/Xilinx/SDx/2018.3/scripts/xsd/xdHlsAdapterComp.xsl  D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1.fcnmap.xml
+cd D:/ljd4/GCRU/Release
+aarch64-linux-gnu-objcopy --add-section .xddata=D:/ljd4/GCRU/Release/_sds/swstubs/conv2d_1.xml D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o
+aarch64-linux-gnu-objcopy --add-section .xdasm=D:/ljd4/GCRU/Release/_sds/.llvm/src/hw8.s D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o
+aarch64-linux-gnu-g++ -E -I../src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__ -MTD:/ljd4/GCRU/Release/src/hw8.o -MFD:/ljd4/GCRU/Release/src/hw8.d -MTD:/ljd4/GCRU/Release/src/hw8.o       -I C:/Xilinx/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2018.3/include D:/ljd4/GCRU/src/hw8.cpp -o D:/ljd4/GCRU/Release/_sds/.pp/hw8.iix
+aarch64-linux-gnu-objcopy --add-section .xdpp=D:/ljd4/GCRU/Release/_sds/.pp/hw8.ii D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o
+aarch64-linux-gnu-objcopy --add-section .xdfcnmap=D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1.fcnmap.xml D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o
+aarch64-linux-gnu-objcopy --add-section .xdhlscore=D:/ljd4/GCRU/Release/_sds/vhls/conv2d_1/solution/impl/ip/xilinx_com_hls_conv2d_1_1_0.zip D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o
+aarch64-linux-gnu-objcopy --add-section .xdif=D:/ljd4/GCRU/Release/_sds/.llvm/conv2d_1_if.xml D:/ljd4/GCRU/Release/_sds/swstubs/hw8.o
+# sds++ completed at Mon Nov 25 19:28:25 +0800 2019

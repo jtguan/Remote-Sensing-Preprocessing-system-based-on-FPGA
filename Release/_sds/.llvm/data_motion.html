@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table, th, td
+    {
+      border-collapse:collapse;
+      border:1px solid black;
+    }
+    th, td
+    {
+      padding:5px;
+    }
+    p
+    {
+      font-size:200%
+    }
+  </style>
+  <title> Data Motion Network Report </title>
+</head>
+<body>
+<p>Partition 0</p>
+<sup><strong>Note:</strong> "(size)" may show up in the Declared/Transfer Size of an argument if the actual array size was not present in the C/C++ source code, most likely the argument is a pointer.<br>
+     * - Line number under Callsite with an asterisk * is based on the generated source file located at .../_sds/.llvm.  It is not based on the original source file.</sup><table>
+<caption><b><font size="5">Data Motion Network</font></b></caption>
+<tr>
+<th>Accelerator</th>
+<th>Argument</th>
+<th>IP Port</th>
+<th>Direction</th>
+<th>Declared Size(bytes)</th>
+<th>Pragmas</th>
+<th>Connection</th>
+</tr>
+<tr>
+<td>conv2d_1_1</td>
+<td>CON_IN2</td>
+<td>CON_IN2_V</td>
+<td>IN</td>
+<td>42240*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP3_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>KER2</td>
+<td>KER2_V</td>
+<td>IN</td>
+<td>36864*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP2_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>CON_OUT2</td>
+<td>CON_OUT2_V</td>
+<td>OUT</td>
+<td>32768*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP0_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>BIA2</td>
+<td>BIA2_V</td>
+<td>IN</td>
+<td>64*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP1_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>CON_IN3</td>
+<td>CON_IN3_V</td>
+<td>IN</td>
+<td>42240*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP0_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>KER3</td>
+<td>KER3_V</td>
+<td>IN</td>
+<td>36864*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP3_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>CON_OUT3</td>
+<td>CON_OUT3_V</td>
+<td>OUT</td>
+<td>32768*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP1_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>BIA3</td>
+<td>BIA3_V</td>
+<td>IN</td>
+<td>64*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP2_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>CON_IN4</td>
+<td>CON_IN4_V</td>
+<td>IN</td>
+<td>42240*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP1_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>KER4</td>
+<td>KER4_V</td>
+<td>IN</td>
+<td>36864*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP0_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>CON_OUT4</td>
+<td>CON_OUT4_V</td>
+<td>OUT</td>
+<td>32768*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP2_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>BIA4</td>
+<td>BIA4_V</td>
+<td>IN</td>
+<td>64*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP3_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>CON_IN5</td>
+<td>CON_IN5_V</td>
+<td>IN</td>
+<td>42240*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP2_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>KER5</td>
+<td>KER5_V</td>
+<td>IN</td>
+<td>36864*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP1_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>CON_OUT5</td>
+<td>CON_OUT5_V</td>
+<td>OUT</td>
+<td>32768*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP3_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>BIA5</td>
+<td>BIA5_V</td>
+<td>IN</td>
+<td>64*2</td>
+<td><ul>
+<li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
+<li>data_mover:AXIDMA_SIMPLE</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP0_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>re_en</td>
+<td>re_en</td>
+<td>IN</td>
+<td>4</td>
+<td><ul>
+</ul>
+</td>
+<td>ps_e_M_AXI_HPM0_FPD:AXILITE:0xC</td>
+</tr>
+</table>
+
+<table>
+<caption><b><font size="5">Accelerator Callsites</font></b></caption>
+<tr>
+<th>Accelerator</th>
+<th>Callsite</th>
+<th>IP Port</th>
+<th>Transfer Size(bytes)</th>
+<th>Paged or Contiguous</th>
+<th>Datamover Setup Time(CPU cycles)</th>
+<th>Transfer Time(CPU cycles)</th>
+</tr>
+<tr>
+<td>conv2d_1_1</td>
+<td>tsw9.cpp:252:5</td>
+<td>CON_IN2_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER2_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT2_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA2_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN3_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER3_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT3_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA3_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN4_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER4_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT4_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA4_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN5_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER5_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT5_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA5_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>re_en</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<td></td>
+<td>tsw9.cpp:212:5</td>
+<td>CON_IN2_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER2_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT2_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA2_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN3_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER3_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT3_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA3_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN4_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER4_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT4_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA4_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN5_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER5_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT5_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA5_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>re_en</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<td></td>
+<td>tsw9.cpp:132:5</td>
+<td>CON_IN2_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER2_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT2_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA2_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN3_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER3_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT3_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA3_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN4_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER4_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT4_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA4_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN5_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER5_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT5_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA5_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>re_en</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<td></td>
+<td>tsw9.cpp:86:5</td>
+<td>CON_IN2_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER2_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT2_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA2_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN3_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER3_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT3_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA3_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN4_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER4_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT4_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA4_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_IN5_V</td>
+<td>84480</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>13039</td>
+<td>234383</td>
+</tr>
+<td></td>
+<td></td>
+<td>KER5_V</td>
+<td>73728</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>11345</td>
+<td>204834</td>
+</tr>
+<td></td>
+<td></td>
+<td>CON_OUT5_V</td>
+<td>65536</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>10054</td>
+<td>182321</td>
+</tr>
+<td></td>
+<td></td>
+<td>BIA5_V</td>
+<td>128</td>
+<td>PHYSICAL_CONTIGUOUS</td>
+<td>1188</td>
+<td>2497</td>
+</tr>
+<td></td>
+<td></td>
+<td>re_en</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+</table>
+</body>
+<dmn>
+	<accel name="conv2d_1_1">
+		<arg name="CON_IN2" ipPort="CON_IN2_V" direction="IN" size="42240*2" pragma="" connectionIpPort="ps_e_S_AXI_HP3_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="KER2" ipPort="KER2_V" direction="IN" size="36864*2" pragma="" connectionIpPort="ps_e_S_AXI_HP2_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="CON_OUT2" ipPort="CON_OUT2_V" direction="OUT" size="32768*2" pragma="" connectionIpPort="ps_e_S_AXI_HP0_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="BIA2" ipPort="BIA2_V" direction="IN" size="64*2" pragma="" connectionIpPort="ps_e_S_AXI_HP1_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="CON_IN3" ipPort="CON_IN3_V" direction="IN" size="42240*2" pragma="" connectionIpPort="ps_e_S_AXI_HP0_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="KER3" ipPort="KER3_V" direction="IN" size="36864*2" pragma="" connectionIpPort="ps_e_S_AXI_HP3_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="CON_OUT3" ipPort="CON_OUT3_V" direction="OUT" size="32768*2" pragma="" connectionIpPort="ps_e_S_AXI_HP1_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="BIA3" ipPort="BIA3_V" direction="IN" size="64*2" pragma="" connectionIpPort="ps_e_S_AXI_HP2_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="CON_IN4" ipPort="CON_IN4_V" direction="IN" size="42240*2" pragma="" connectionIpPort="ps_e_S_AXI_HP1_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="KER4" ipPort="KER4_V" direction="IN" size="36864*2" pragma="" connectionIpPort="ps_e_S_AXI_HP0_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="CON_OUT4" ipPort="CON_OUT4_V" direction="OUT" size="32768*2" pragma="" connectionIpPort="ps_e_S_AXI_HP2_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="BIA4" ipPort="BIA4_V" direction="IN" size="64*2" pragma="" connectionIpPort="ps_e_S_AXI_HP3_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="CON_IN5" ipPort="CON_IN5_V" direction="IN" size="42240*2" pragma="" connectionIpPort="ps_e_S_AXI_HP2_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="KER5" ipPort="KER5_V" direction="IN" size="36864*2" pragma="" connectionIpPort="ps_e_S_AXI_HP1_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="CON_OUT5" ipPort="CON_OUT5_V" direction="OUT" size="32768*2" pragma="" connectionIpPort="ps_e_S_AXI_HP3_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="BIA5" ipPort="BIA5_V" direction="IN" size="64*2" pragma="" connectionIpPort="ps_e_S_AXI_HP0_FPD" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="re_en" ipPort="re_en" direction="IN" size="4" pragma="" connectionIpPort="ps_e_M_AXI_HPM0_FPD" connectionDm="AXILITE"\>
+	</accel>
+	<call accel="conv2d_1_1" site="tsw9.cpp:252:5">
+		<arg ipPort="CON_IN2_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER2_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT2_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA2_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN3_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER3_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT3_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA3_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN4_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER4_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT4_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA4_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN5_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER5_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT5_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA5_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="re_en" size="4" memType="paged" setup="0" transfer="13"/>
+	</call>
+	<call accel="conv2d_1_1" site="tsw9.cpp:212:5">
+		<arg ipPort="CON_IN2_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER2_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT2_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA2_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN3_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER3_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT3_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA3_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN4_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER4_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT4_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA4_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN5_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER5_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT5_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA5_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="re_en" size="4" memType="paged" setup="0" transfer="13"/>
+	</call>
+	<call accel="conv2d_1_1" site="tsw9.cpp:132:5">
+		<arg ipPort="CON_IN2_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER2_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT2_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA2_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN3_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER3_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT3_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA3_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN4_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER4_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT4_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA4_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN5_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER5_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT5_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA5_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="re_en" size="4" memType="paged" setup="0" transfer="13"/>
+	</call>
+	<call accel="conv2d_1_1" site="tsw9.cpp:86:5">
+		<arg ipPort="CON_IN2_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER2_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT2_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA2_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN3_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER3_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT3_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA3_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN4_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER4_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT4_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA4_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="CON_IN5_V" size="84480" memType="PHYSICAL_CONTIGUOUS" setup="13039" transfer="234383"/>
+		<arg ipPort="KER5_V" size="73728" memType="PHYSICAL_CONTIGUOUS" setup="11345" transfer="204834"/>
+		<arg ipPort="CON_OUT5_V" size="65536" memType="PHYSICAL_CONTIGUOUS" setup="10054" transfer="182321"/>
+		<arg ipPort="BIA5_V" size="128" memType="PHYSICAL_CONTIGUOUS" setup="1188" transfer="2497"/>
+		<arg ipPort="re_en" size="4" memType="paged" setup="0" transfer="13"/>
+	</call>
+</dmn>
+</html>

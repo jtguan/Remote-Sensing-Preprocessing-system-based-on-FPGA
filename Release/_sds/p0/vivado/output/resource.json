@@ -1,0 +1,54 @@
+{
+    "Used Resources": [
+        {
+            "ip_instance": "zcu102_conv2d_1_1_0",
+            "resources": [
+                {
+                    "LUT": "47685"
+                },
+                {
+                    "LUTAsLogic": "47685"
+                },
+                {
+                    "LUTMem": "0"
+                },
+                {
+                    "REG": "25183"
+                },
+                {
+                    "CARRY8": "4744"
+                },
+                {
+                    "F7MUX": "530"
+                },
+                {
+                    "F8MUX": "256"
+                },
+                {
+                    "F9MUX": "0"
+                },
+                {
+                    "BRAM": "768"
+                },
+                {
+                    "DSP": "1728"
+                },
+                {
+                    "GLOBAL_CLOCK_BUFFERS": "0"
+                },
+                {
+                    "PLL": "0"
+                },
+                {
+                    "MMCM": "0"
+                },
+                {
+                    "GTHE4_CHANNEL": "0"
+                },
+                {
+                    "GTHE4_COMMON": "0"
+                }
+            ]
+        }
+    ]
+}

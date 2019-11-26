@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:repository xmlns:xd="http://www.xilinx.com/xd" xd:vendor="xilinx.com" xd:library="hls" xd:name="conv2d_1" xd:version="1.0">
+    <xd:component xd:vendor="xilinx.com" xd:library="hls" xd:name="conv2d_1" xd:version="1.0" xd:type="accelerator">
+        <xd:busInterface xd:name="ap_clk" xd:busTypeRef="clock" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="ap_clk" xd:resetRef="ap_rst_n"/>
+        <xd:busInterface xd:name="ap_rst_n" xd:busTypeRef="reset" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="ap_rst_n" xd:activeLevel="low"/>
+        <xd:busInterface xd:name="ap_ctrl" xd:busTypeRef="acc_handshake" xd:mode="slave"/>
+        <xd:busInterface xd:name="CON_IN2_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="KER2_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="CON_OUT2_V" xd:busTypeRef="acc_fifo_write" xd:mode="master"/>
+        <xd:busInterface xd:name="BIA2_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="CON_IN3_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="KER3_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="CON_OUT3_V" xd:busTypeRef="acc_fifo_write" xd:mode="master"/>
+        <xd:busInterface xd:name="BIA3_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="CON_IN4_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="KER4_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="CON_OUT4_V" xd:busTypeRef="acc_fifo_write" xd:mode="master"/>
+        <xd:busInterface xd:name="BIA4_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="CON_IN5_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="KER5_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="CON_OUT5_V" xd:busTypeRef="acc_fifo_write" xd:mode="master"/>
+        <xd:busInterface xd:name="BIA5_V" xd:busTypeRef="acc_fifo_read" xd:mode="master"/>
+        <xd:busInterface xd:name="re_en" xd:busTypeRef="data" xd:mode="slave"/>
+    </xd:component>
+</xd:repository>

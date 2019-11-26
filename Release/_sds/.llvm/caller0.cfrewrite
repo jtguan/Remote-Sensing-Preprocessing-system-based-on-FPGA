@@ -1,0 +1,44 @@
+{
+	"file":	"D:/ljd4/GCRU/src/tsw9.cpp",
+	"callers":	[{
+			"call":	"conv2d_1",
+			"line":	252,
+			"col":	5,
+			"repl":	"p_0_conv2d_1_1_async_1"
+		}, {
+			"call":	"conv2d_1",
+			"line":	212,
+			"col":	5,
+			"repl":	"p_0_conv2d_1_1_async_1"
+		}, {
+			"call":	"conv2d_1",
+			"line":	132,
+			"col":	5,
+			"repl":	"p_0_conv2d_1_1_async_1"
+		}, {
+			"call":	"conv2d_1",
+			"line":	86,
+			"col":	5,
+			"repl":	"p_0_conv2d_1_1_async_1"
+		}],
+	"parents":	[{
+			"function":	"split",
+			"proto":	"void p_0_conv2d_1_1_async_1(ap_fixed<16, 2> CON_IN2[42240], ap_fixed<16, 2> KER2[36864], ap_fixed<16, 2> CON_OUT2[32768], ap_fixed<16, 2> BIA2[64], ap_fixed<16, 2> CON_IN3[42240], ap_fixed<16, 2> KER3[36864], ap_fixed<16, 2> CON_OUT3[32768], ap_fixed<16, 2> BIA3[64], ap_fixed<16, 2> CON_IN4[42240], ap_fixed<16, 2> KER4[36864], ap_fixed<16, 2> CON_OUT4[32768], ap_fixed<16, 2> BIA4[64], ap_fixed<16, 2> CON_IN5[42240], ap_fixed<16, 2> KER5[36864], ap_fixed<16, 2> CON_OUT5[32768], ap_fixed<16, 2> BIA5[64], int re_en);\n"
+		}, {
+			"function":	"sync_conv",
+			"proto":	"void p_0_conv2d_1_1_async_1(ap_fixed<16, 2> CON_IN2[42240], ap_fixed<16, 2> KER2[36864], ap_fixed<16, 2> CON_OUT2[32768], ap_fixed<16, 2> BIA2[64], ap_fixed<16, 2> CON_IN3[42240], ap_fixed<16, 2> KER3[36864], ap_fixed<16, 2> CON_OUT3[32768], ap_fixed<16, 2> BIA3[64], ap_fixed<16, 2> CON_IN4[42240], ap_fixed<16, 2> KER4[36864], ap_fixed<16, 2> CON_OUT4[32768], ap_fixed<16, 2> BIA4[64], ap_fixed<16, 2> CON_IN5[42240], ap_fixed<16, 2> KER5[36864], ap_fixed<16, 2> CON_OUT5[32768], ap_fixed<16, 2> BIA5[64], int re_en);\n"
+		}],
+	"waits":	[{
+			"line":	130,
+			"call":	"\nsds_wait(1);\n"
+		}, {
+			"line":	176,
+			"call":	"\nsds_wait(1);\n"
+		}, {
+			"line":	244,
+			"call":	"\nsds_wait(1);\n"
+		}, {
+			"line":	285,
+			"call":	"\nsds_wait(1);\n"
+		}]
+}

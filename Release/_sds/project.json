@@ -1,0 +1,8 @@
+{
+  "project" : {
+    "id" : "0",
+    "xpfmFile" : "C:/Xilinx/SDx/2018.3/platforms/zcu102/zcu102.xpfm",
+    "sysConfig" : "a53_linux",
+    "accelerators" : "conv2d_1"
+  }
+}

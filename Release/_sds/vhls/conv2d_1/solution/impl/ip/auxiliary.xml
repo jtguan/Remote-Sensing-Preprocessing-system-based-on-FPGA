@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="conv2d_1" xd:componentRef="conv2d_1" xd:initiationInterval="107782" xd:clockPeriod="10.001" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="CON_IN2[]" xd:originalName="CON_IN2" xd:direction="in" xd:interfaceRef="CON_IN2_V" xd:busTypeRef="acc_fifo" xd:arraySize="42240" xd:dataWidth="16"/>
+  <xd:arg xd:name="KER2[]" xd:originalName="KER2" xd:direction="in" xd:interfaceRef="KER2_V" xd:busTypeRef="acc_fifo" xd:arraySize="36864" xd:dataWidth="16"/>
+  <xd:arg xd:name="CON_OUT2[]" xd:originalName="CON_OUT2" xd:direction="out" xd:interfaceRef="CON_OUT2_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="32768" xd:dataWidth="16"/>
+  <xd:arg xd:name="BIA2[]" xd:originalName="BIA2" xd:direction="in" xd:interfaceRef="BIA2_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="64" xd:dataWidth="16"/>
+  <xd:arg xd:name="CON_IN3[]" xd:originalName="CON_IN3" xd:direction="in" xd:interfaceRef="CON_IN3_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="42240" xd:dataWidth="16"/>
+  <xd:arg xd:name="KER3[]" xd:originalName="KER3" xd:direction="in" xd:interfaceRef="KER3_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="36864" xd:dataWidth="16"/>
+  <xd:arg xd:name="CON_OUT3[]" xd:originalName="CON_OUT3" xd:direction="out" xd:interfaceRef="CON_OUT3_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="32768" xd:dataWidth="16"/>
+  <xd:arg xd:name="BIA3[]" xd:originalName="BIA3" xd:direction="in" xd:interfaceRef="BIA3_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="64" xd:dataWidth="16"/>
+  <xd:arg xd:name="CON_IN4[]" xd:originalName="CON_IN4" xd:direction="in" xd:interfaceRef="CON_IN4_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="42240" xd:dataWidth="16"/>
+  <xd:arg xd:name="KER4[]" xd:originalName="KER4" xd:direction="in" xd:interfaceRef="KER4_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="36864" xd:dataWidth="16"/>
+  <xd:arg xd:name="CON_OUT4[]" xd:originalName="CON_OUT4" xd:direction="out" xd:interfaceRef="CON_OUT4_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="32768" xd:dataWidth="16"/>
+  <xd:arg xd:name="BIA4[]" xd:originalName="BIA4" xd:direction="in" xd:interfaceRef="BIA4_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="64" xd:dataWidth="16"/>
+  <xd:arg xd:name="CON_IN5[]" xd:originalName="CON_IN5" xd:direction="in" xd:interfaceRef="CON_IN5_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="42240" xd:dataWidth="16"/>
+  <xd:arg xd:name="KER5[]" xd:originalName="KER5" xd:direction="in" xd:interfaceRef="KER5_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="36864" xd:dataWidth="16"/>
+  <xd:arg xd:name="CON_OUT5[]" xd:originalName="CON_OUT5" xd:direction="out" xd:interfaceRef="CON_OUT5_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="32768" xd:dataWidth="16"/>
+  <xd:arg xd:name="BIA5[]" xd:originalName="BIA5" xd:direction="in" xd:interfaceRef="BIA5_V" xd:busTypeRef="acc_fifo" xd:firstOut="6" xd:arraySize="64" xd:dataWidth="16"/>
+  <xd:arg xd:name="re_en" xd:originalName="re_en" xd:direction="in" xd:interfaceRef="re_en" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="6"/>
+  <xd:latencyEstimates xd:best-case="107781" xd:worst-case="107781" xd:average-case="107781"/>
+  <xd:resourceEstimates xd:LUT="144576" xd:FF="46446" xd:BRAM="1536" xd:DSP="2304"/>
+</xd:acceleratorMap>

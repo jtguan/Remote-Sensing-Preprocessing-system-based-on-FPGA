@@ -1,0 +1,25 @@
+#include "cf_stub.h"
+
+cf_request_handle_t p_0_request_0;
+cf_request_handle_t p_0_request_1;
+cf_request_handle_t p_0_request_2;
+cf_request_handle_t p_0_request_3;
+cf_request_handle_t p_0_request_4;
+cf_request_handle_t p_0_request_5;
+cf_request_handle_t p_0_request_6;
+cf_request_handle_t p_0_request_7;
+cf_request_handle_t p_0_request_8;
+cf_request_handle_t p_0_request_9;
+cf_request_handle_t p_0_request_10;
+cf_request_handle_t p_0_request_11;
+cf_request_handle_t p_0_request_12;
+cf_request_handle_t p_0_request_13;
+cf_request_handle_t p_0_request_14;
+cf_request_handle_t p_0_request_15;
+cf_request_handle_t p_0_request_16;
+
+unsigned int p_0_conv2d_1_1_async_1_num_CON_OUT2_V;
+unsigned int p_0_conv2d_1_1_async_1_num_CON_OUT3_V;
+unsigned int p_0_conv2d_1_1_async_1_num_CON_OUT4_V;
+unsigned int p_0_conv2d_1_1_async_1_num_CON_OUT5_V;
+
